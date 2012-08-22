@@ -1,0 +1,80 @@
+.container {
+  width: 460px;
+}
+
+header {
+  text-align: center;
+  padding: 40px 0;
+
+  text-shadow: 0 1px 3px rgba(0, 0, 0, .05), 0 0 30px rgba(0, 0, 0, .025);
+}
+
+header h1 {
+  font-size: 60px;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+header h1 a {
+  color: inherit;
+}
+header h1 a:hover {
+  text-decoration: none;
+}
+
+header + .alert {
+  margin-top: -20px;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  header {
+    padding: 40px 0 20px 0;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+
+  /* From bootstrap-responsive.css */
+  body {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .container {
+    width: auto;
+    min-width: 180px;
+  }
+
+  .input-large,
+  .input-xlarge,
+  .input-xxlarge,
+  input[class*="span"],
+  select[class*="span"],
+  textarea[class*="span"],
+  .uneditable-input {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .form-horizontal .control-group > label {
+    float: none;
+    width: auto;
+    padding-top: 0;
+    text-align: left;
+  }
+  .form-horizontal .controls {
+    margin-left: 0;
+  }
+  .form-horizontal .control-list {
+    padding-top: 0;
+  }
+  .form-horizontal .form-actions {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
