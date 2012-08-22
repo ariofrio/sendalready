@@ -35,6 +35,10 @@ header + .alert {
     font-size: 40px;
   }
 
+  .forkme {
+    display: none;
+  }
+
   /* Adapted from bootstrap-responsive.css */
   body {
     padding-right: 20px;
